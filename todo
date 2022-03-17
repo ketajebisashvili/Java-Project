@@ -4,7 +4,7 @@
     good commits
 
 2. .gitignore
-    add .gitignore - done
+    add .gitignore
 
 3. Calculate3 (Benedek)
     MaxOdd
@@ -12,6 +12,7 @@
     Even
 
 4. Theory
+    add theory folder, import the gradle file and fill the answers
 
 5. README
    Team
