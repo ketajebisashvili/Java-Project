@@ -35,11 +35,13 @@ You have to put the following command to the GET input box: <br>
 http://localhost:8080/calculator/calculate1?numbers=1,2,3 <br>
 http://localhost:8080/calculator/calculate2?numbers=1,2,3 <br>
 http://localhost:8080/calculator/calculate3?numbers=1,2,3 <br>
+http://localhost:8080/calculator/calculate4?numbers=1,2,3 <br>
 
 <b>Testing with browser software:</b><br>
 You have to put the following command to the browser's url line: <br>
 http://localhost:8080/calculator/calculate1?numbers=1,2,3 <br>
 http://localhost:8080/calculator/calculate2?numbers=1,2,3 <br>
 http://localhost:8080/calculator/calculate3?numbers=1,2,3 <br>
+http://localhost:8080/calculator/calculate4?numbers=1,2,3 <br> 
 
 <b>You can change the integers after the " numbers= " part of the url, the calculator API should give the correct output based on your input numbers. </b>
