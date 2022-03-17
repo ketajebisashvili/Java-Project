@@ -31,7 +31,7 @@ Application runs at: http://localhost:8080
 Swagger UI is accessible: http://localhost:8080/swagger-ui/index.html
 
 <b>Testing with Postman software:</b><br>
-You have to put the following command to the GET input box: <br>
+You have to put the following command to the GET input box: <br>git
 http://localhost:8080/calculator/calculate1?numbers=1,2,3 <br>
 http://localhost:8080/calculator/calculate2?numbers=1,2,3 <br>
 http://localhost:8080/calculator/calculate3?numbers=1,2,3 <br>
