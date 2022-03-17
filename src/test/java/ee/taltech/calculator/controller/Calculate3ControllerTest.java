@@ -8,40 +8,36 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
-import java.util.List;
-
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @AutoConfigureMockMvc
 @SpringBootTest
-class Calculate1ControllerTest {
+class Calculate3ControllerTest {
 
     @Autowired
     private MockMvc mvc;
 
     @Test
     @DisplayName("wrong path returns 404 status bad request or default object when correct")
-    void stringsTest() throws Exception {
+    void requestTest() throws Exception {
 
-        mvc.perform(get("/calculator/calculate1"))
+        mvc.perform(get("/calculator/calculate3"))
                 .andExpect(status().is4xxClientError());
 
-        mvc.perform(get("/calculator/calculate1?numbers="))
+        mvc.perform(get("/calculator/calculate3?numbers="))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(content().string("{}"));
     }
 
     @Test
-    @DisplayName("list of values request, returns object with the wanted methods")
-    void stringsCalculationTest() throws Exception {
+    @DisplayName("request with list of values, returns the correct results")
+    void calcTest() throws Exception {
 
-        mvc.perform(get("/calculator/calculate1?numbers=-8,-4,-2,0,2,3,3,5,8,9"))
+        mvc.perform(get("/calculator/calculate3?numbers=-8,-4,-2,0,2,3,3,5,8,9"))
                 .andExpect(status().is2xxSuccessful())
-                .andExpect(jsonPath("$.minOdd").value(3))
-                .andExpect(jsonPath("$.sumOfEven").value(-4))
-                .andExpect(jsonPath("$.negatives").value(Lists.newArrayList(-8,-4,-2)));
+                .andExpect(jsonPath("$.maxOfOdd").value(9))
+                .andExpect(jsonPath("$.sum").value(14))
+                .andExpect(jsonPath("$.even").value(Lists.newArrayList(-8,-4,-2,0,2,8)));
     }
 }

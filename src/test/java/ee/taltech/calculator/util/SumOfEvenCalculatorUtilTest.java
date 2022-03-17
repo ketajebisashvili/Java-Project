@@ -21,7 +21,7 @@ class SumOfEvenCalculatorUtilTest {
     @DisplayName("sum of integers is correct")
     void longestStringTest() {
 
-        assertEquals(4, SumOfEvenCalculatorUtil.sum(List.of(4, 3)));
-        assertEquals(-2, SumOfEvenCalculatorUtil.sum(List.of(-6, 4, 1)));
+        assertEquals(20, SumOfEvenCalculatorUtil.sum(List.of(-2,0,1,2,5,6,6,8,9)));
+        assertEquals(-86, SumOfEvenCalculatorUtil.sum(List.of(-100,-6,2,3,4,6,8)));
     }
 }

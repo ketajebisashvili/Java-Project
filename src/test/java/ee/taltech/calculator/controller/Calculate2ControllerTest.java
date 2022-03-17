@@ -35,10 +35,10 @@ class Calculate2ControllerTest {
     @DisplayName("request with list of values, returns the correct results")
     void calcTest() throws Exception {
 
-        mvc.perform(get("/calculator/calculate2?numbers=1,-4,-8,8,9,0"))
+        mvc.perform(get("/calculator/calculate2?numbers=-8,-4,-2,0,2,3,3,5,8,9"))
                 .andExpect(status().is2xxSuccessful())
-                .andExpect(jsonPath("$.signReversed").value(Lists.newArrayList(-1,4,8,-8,-9,0)))
-                .andExpect(jsonPath("$.negatives").value(Lists.newArrayList(-8,-4)))
+                .andExpect(jsonPath("$.signReversed").value(Lists.newArrayList(8,4,2,0,-3,-3,-5,-8,-9)))
+                .andExpect(jsonPath("$.negatives").value(Lists.newArrayList(-8,-4,-2)))
                 .andExpect(jsonPath("$.averageOfOdd").value(5));
     }
 }
