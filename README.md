@@ -11,7 +11,7 @@ Benedek Matveev
 This is an updated second version of our previous code:
 https://gitlab.cs.ttu.ee/bematv/java-project2
 
-This version contains a third calculator API and only developed by <b>Benedek Matveev</b>.
+This version contains two more calculator, calculate 3 and calculate 4.
 This version code can be found at:
 https://gitlab.cs.ttu.ee/bematv/ics0014-2022-java-project-2-version-2
 
