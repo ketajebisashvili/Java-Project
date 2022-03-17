@@ -36,8 +36,8 @@ class Calculate3ControllerTest {
 
         mvc.perform(get("/calculator/calculate3?numbers=-8,-4,-2,0,2,3,3,5,8,9"))
                 .andExpect(status().is2xxSuccessful())
-                .andExpect(jsonPath("$.maxOfOdd").value(9))
-                .andExpect(jsonPath("$.sum").value(14))
+                .andExpect(jsonPath("$.maxOdd").value(9))
+                .andExpect(jsonPath("$.sum").value(16))
                 .andExpect(jsonPath("$.even").value(Lists.newArrayList(-8,-4,-2,0,2,8)));
     }
 }
