@@ -10,7 +10,7 @@ import static lombok.AccessLevel.PRIVATE;
 @NoArgsConstructor(access = PRIVATE)
 
 public class MaxOfOddCalculatorUtil {
-    public static Integer maxOddNumber(List<Integer> numbers) {
+    public static Integer maxOfOddNumber(List<Integer> numbers) {
         if (CollectionUtils.isEmpty(numbers)) {
             return null;
         }
