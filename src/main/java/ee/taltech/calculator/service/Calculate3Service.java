@@ -2,6 +2,7 @@ package ee.taltech.calculator.service;
 
 import ee.taltech.calculator.dto.Calculate3Result;
 import ee.taltech.calculator.util.MaxOfOddCalculatorUtil;
+import ee.taltech.calculator.util.SumCalculatorUtil;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
