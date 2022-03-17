@@ -23,6 +23,12 @@ The new calculator API can do the following functions:
     The API adds together the input numbers, summarize them.
 * <b> Even: </b><br>
     The API selects the even numbers from the input.
+* <b> Odd: </b><br>
+    The API selects the odd numbers from the input.
+* <b> MaxOdd: </b><br>
+    The API selects the maximum odd number from the input.
+* <b>Average of Negatives: </b><br>
+    The API selects the average of negative numbers from the input.
 
 <h2>Run and test the Application:</h2>
 
