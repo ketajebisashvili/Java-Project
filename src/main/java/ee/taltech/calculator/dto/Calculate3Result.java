@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Calculate3Result {
 
-    private Integer maxOdd;
+    private Integer maxOfOdd;
     private Integer sum;
     private List <Integer> even;
 }

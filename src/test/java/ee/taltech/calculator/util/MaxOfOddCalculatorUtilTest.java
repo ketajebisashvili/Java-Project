@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MaxOddCalculatorUtilTest {
+class MaxOfOddCalculatorUtilTest {
 
     @Test
     @DisplayName("MaxOdd result is null or empty")

@@ -16,7 +16,7 @@ public class Calculate3Service {
     public Calculate3Result calculate3(List<Integer> numbers) {
 
         Calculate3Result result = new Calculate3Result();
-        result.setMaxOdd(MaxOfOddCalculatorUtil.maxOfOddNumber(numbers));
+        result.setMaxOfOdd(MaxOfOddCalculatorUtil.maxOfOddNumber(numbers));
         result.setSum(SumCalculatorUtil.sumNumbers(numbers));
         result.setEven(EvenCalculatorUtil.evenNumbers(numbers));
         return result;

@@ -17,7 +17,7 @@ https://gitlab.cs.ttu.ee/bematv/ics0014-2022-java-project-2-version-2
 
 The new calculator API can do the following functions:
 
-* <b> MaxOdd: </b><br>
+* <b> MaxOfOdd: </b><br>
     The API selects the highet odd number from the input.
 * <b> Sum: </b><br>
     The API adds together the input numbers, summarize them.
